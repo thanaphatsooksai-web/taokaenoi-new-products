@@ -407,6 +407,23 @@ export default function Home() {
                 ขอบคุณทุกคนที่เข้ามาชม ร่วมโหวต และร่วมสนุกกับแคมเปญ “เติมรส” ของเถ้าแก่น้อย
                 แล้วพบกับสาหร่ายอบ 20 ก. และสาหร่ายโรยข้าว 45 ก. ได้เร็ว ๆ นี้
               </p>
+              <a
+                className="ig-link"
+                href="https://www.instagram.com/thanakorn_art/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span className="ig-link__icon" aria-hidden>
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" strokeWidth="2">
+                    <rect x="3" y="3" width="18" height="18" rx="5" />
+                    <circle cx="12" cy="12" r="4.2" />
+                    <circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" stroke="none" />
+                  </svg>
+                </span>
+                <span>
+                  ติดตามได้ที่ Instagram: <b>thanakorn_art</b>
+                </span>
+              </a>
               <div className="hero__cta">
                 <a href="#products" className="btn btn--yellow">
                   เลือกรสที่ใช่ →
