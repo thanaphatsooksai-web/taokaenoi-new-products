@@ -21,8 +21,8 @@ export default function OutfitPhoto() {
 
   return (
     <>
-      <div className="outfit" role="radiogroup" aria-label="เปลี่ยนชุด">
-        <span className="outfit__label">เปลี่ยนชุด</span>
+      <div className="outfit" role="radiogroup" aria-label="เติมรสให้อาร์ท">
+        <span className="outfit__label">เติมรสให้อาร์ท</span>
         {OUTFITS.map((o) => (
           <button
             key={o.id}
