@@ -1924,3 +1924,14 @@ button {
     display: block;
   }
 }
+
+.poll__reset {
+  margin-top: 8px;
+  text-align: center;
+  font-size: 13px;
+  color: var(--muted);
+}
+.poll__reset b {
+  color: var(--ink);
+  font-variant-numeric: tabular-nums;
+}
