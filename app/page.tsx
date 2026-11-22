@@ -300,9 +300,13 @@ export default function Home() {
             </div>
             <ul className="partners">
               {partners.map((p, i) => (
-                <li key={p.name} className={`partner partner--${p.tone} reveal`} style={{ transitionDelay: `${i * 90}ms` }}>
-                  <span className="partner__mark" aria-hidden>
-                    {p.mark}
+                <li key={p.name} className="partner reveal" style={{ transitionDelay: `${i * 90}ms` }}>
+                  <span className="partner__logo">
+                    <Image
+                      src={p.logo}
+                      alt={`โลโก้ ${p.nameEn}`}
+                      style={{ height: p.logoH, width: "auto" }}
+                    />
                   </span>
                   <span className="partner__name">{p.name}</span>
                   {p.nameEn && <span className="partner__en">{p.nameEn}</span>}

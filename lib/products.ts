@@ -3,6 +3,9 @@ import roastedOriginal from "@/assets/roasted-20-original.webp";
 import roastedTomyum from "@/assets/roasted-20-tomyum.webp";
 import toppingOriginal from "@/assets/topping-45-original.webp";
 import toppingTomyum from "@/assets/topping-45-tomyum.webp";
+import logoIf from "@/assets/partner-if.png";
+import logoBetagen from "@/assets/partner-betagen.png";
+import logoThairath from "@/assets/partner-thairath.png";
 
 // ข้อมูลสินค้าใหม่ อ้างอิงจากรายงานแผนการตลาดเถ้าแก่น้อย ปี 2570 (หัวข้อ 4.1.7.3 และ 4.2)
 
@@ -142,7 +145,7 @@ export const stores = [
 ];
 
 export const partners = [
-  { name: "น้ำมะพร้าว IF", nameEn: "IF Coconut Water", mark: "IF", tone: "green" },
-  { name: "บีทาเก้น", nameEn: "Betagen", mark: "บี", tone: "yellow" },
-  { name: "หนังสือพิมพ์ไทยรัฐ", nameEn: "Thairath", mark: "ไทยรัฐ", tone: "red" },
-] as const;
+  { name: "น้ำมะพร้าว IF", nameEn: "IF Coconut Water", logo: logoIf, logoH: 72 },
+  { name: "บีทาเก้น", nameEn: "Betagen", logo: logoBetagen, logoH: 46 },
+  { name: "หนังสือพิมพ์ไทยรัฐ", nameEn: "Thairath", logo: logoThairath, logoH: 64 },
+];
