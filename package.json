@@ -9,6 +9,7 @@
     "deploy": "rm -rf .next-deploy && BASE_PATH=/taokaenoi-new-products NEXT_DIST_DIR=.next-deploy next build && touch .next-deploy/.nojekyll && cd .next-deploy && git init -q -b gh-pages && git add -A && git commit -qm deploy && git -c http.postBuffer=157286400 push -f https://github.com/thanaphatsooksai-web/taokaenoi-new-products.git gh-pages"
   },
   "dependencies": {
+    "firebase": "13.2.0",
     "next": "15.5.29",
     "react": "19.1.1",
     "react-dom": "19.1.1"

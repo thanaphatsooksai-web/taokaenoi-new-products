@@ -1,0 +1,23 @@
+{
+  "rules": {
+    ".read": false,
+    ".write": false,
+
+    "poll": {
+      "counts": {
+        ".read": true,
+        "$group": {
+          ".validate": "($group === 'g1' || $group === 'g2' || $group === 'g3') && newData.isNumber() && newData.val() === (data.exists() ? data.val() : 0) + 1 && newData.parent().parent().child('voters').child(auth.uid).val() === now",
+          ".write": "auth != null && (!root.child('poll/voters').child(auth.uid).exists() || now >= root.child('poll/voters').child(auth.uid).val() + 3600000)"
+        }
+      },
+      "voters": {
+        "$uid": {
+          ".read": "auth != null && auth.uid === $uid",
+          ".write": "auth != null && auth.uid === $uid && (!data.exists() || now >= data.val() + 3600000)",
+          ".validate": "newData.isNumber() && newData.val() === now"
+        }
+      }
+    }
+  }
+}

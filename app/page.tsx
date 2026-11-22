@@ -1,6 +1,7 @@
 import Image from "next/image";
 import ProductShowcase from "@/components/ProductShowcase";
 import Reveal from "@/components/Reveal";
+import VotePoll from "@/components/VotePoll";
 import toppingOriginal from "@/assets/topping-45-original.webp";
 import roastedTomyum from "@/assets/roasted-20-tomyum.webp";
 import cookingChallenge from "@/assets/cooking-challenge.webp";
@@ -49,6 +50,7 @@ export default function Home() {
             <a href="#video">ดูคลิป</a>
             <a href="#value">ความคุ้ม</a>
             <a href="#challenge">ร่วมสนุก</a>
+            <a href="#vote">โหวต</a>
             <a href="#partners">พาร์ทเนอร์</a>
           </nav>
           <a href="#where" className="btn btn--yellow btn--sm">
@@ -317,6 +319,22 @@ export default function Home() {
                 <span>#เถ้าแก่น้อย</span>
                 <span>#CookingChallenge</span>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* ---------- VOTE ---------- */}
+        <section id="vote" className="section section--red">
+          <div className="container">
+            <div className="section__head reveal">
+              <span className="pill pill--yellow">โหวตเลย</span>
+              <h2>
+                เชียร์กลุ่มที่ใช่ <span className="text-yellow">โหวตได้ทุกชั่วโมง</span>
+              </h2>
+              <p>กดโหวตได้เลยไม่ต้องล็อกอิน คะแนนอัปเดตสดบนทุกเครื่อง</p>
+            </div>
+            <div className="reveal">
+              <VotePoll />
             </div>
           </div>
         </section>
