@@ -1825,3 +1825,43 @@ button {
     display: none;
   }
 }
+
+/* ผ้าใบรูปกว้างขึ้น (820px) ให้ขนาดคนเท่าเดิม และปุ่มชุดตัดบรรทัดได้ */
+.outfit__stage {
+  width: min(461px, 100%);
+}
+.outfit {
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: calc(100% - 8px);
+  border-radius: 22px;
+}
+.thanks__bubble {
+  top: 72px;
+}
+
+/* ปุ่มเปลี่ยนชุดอยู่เหนือศีรษะ ไม่ทับตัวคน */
+.thanks__media {
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+.outfit,
+.thanks__media .outfit {
+  position: relative;
+  top: auto;
+  left: auto;
+  transform: none;
+  margin: 0 auto 14px;
+}
+.thanks__bubble {
+  top: auto;
+  bottom: 62%;
+}
+@media (max-width: 1000px) {
+  .outfit,
+  .thanks__media .outfit {
+    left: auto;
+    transform: none;
+  }
+}
