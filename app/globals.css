@@ -1432,3 +1432,60 @@ button {
   border-radius: 50%;
   display: block;
 }
+
+/* ---------- video ---------- */
+.video__frame {
+  position: relative;
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 14px;
+  border-radius: 32px;
+  background: linear-gradient(135deg, var(--red), var(--red-dark));
+  box-shadow: var(--shadow);
+}
+.video__frame::before {
+  content: "";
+  position: absolute;
+  inset: -10px -10px auto auto;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: var(--yellow);
+  z-index: -1;
+}
+.video__player {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 744 / 540;
+  border-radius: 20px;
+  background: #000;
+}
+.video__sticker {
+  position: absolute;
+  left: -14px;
+  top: -18px;
+  z-index: 2;
+  padding: 8px 18px;
+  border-radius: 999px;
+  background: var(--yellow);
+  color: var(--red);
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: 20px;
+  transform: rotate(-8deg);
+  box-shadow: var(--shadow-sm);
+}
+@media (max-width: 720px) {
+  .video__frame {
+    padding: 8px;
+    border-radius: 22px;
+  }
+  .video__player {
+    border-radius: 16px;
+  }
+  .video__sticker {
+    left: -4px;
+    font-size: 16px;
+  }
+}

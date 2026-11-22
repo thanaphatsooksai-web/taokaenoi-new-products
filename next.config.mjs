@@ -8,5 +8,7 @@ const nextConfig = {
   basePath,
   images: { unoptimized: true },
   trailingSlash: true,
+  // ให้ไฟล์ใน public (เช่นวิดีโอ) อ้างอิง path ถูกต้องบน GitHub Pages
+  env: { NEXT_PUBLIC_BASE_PATH: basePath },
 };
 export default nextConfig;
