@@ -6,6 +6,7 @@ import toppingOriginal from "@/assets/topping-45-original.webp";
 import roastedTomyum from "@/assets/roasted-20-tomyum.webp";
 import cookingChallenge from "@/assets/cooking-challenge.webp";
 import mascot from "@/assets/taokaenoi-mascot.webp";
+import thankYouPerson from "@/assets/thank-you-person.webp";
 import { pairings, partners, priceLadder, stores } from "@/lib/products";
 
 const marqueeItems = [
@@ -384,16 +385,37 @@ export default function Home() {
           </div>
         </section>
 
-        {/* ---------- CTA ---------- */}
-        <section className="cta">
-          <div className="container cta__inner reveal">
-            <h2>
-              มื้อนี้ <span className="text-yellow">เติมรส</span> หรือยัง?
-            </h2>
-            <p>สาหร่ายอบ 20 ก. · สาหร่ายโรยข้าว 45 ก. · รสดั้งเดิม & รสต้มยำ</p>
-            <a href="#products" className="btn btn--yellow">
-              เลือกรสที่ใช่ →
-            </a>
+        {/* ---------- THANK YOU ---------- */}
+        <section id="thanks" className="cta thanks">
+          <div className="container thanks__inner">
+            <div className="thanks__media reveal">
+              <span className="thanks__plate" aria-hidden />
+              <Image src={thankYouPerson} alt="ตัวแทนทีมผู้จัดทำ" className="thanks__person" />
+              <span className="thanks__bubble">ขอบคุณครับ 🙏</span>
+              <span className="thanks__mascot" aria-hidden>
+                <Image src={mascot} alt="" />
+              </span>
+            </div>
+            <div className="thanks__copy reveal">
+              <span className="pill pill--yellow">Thank you</span>
+              <h2>
+                ขอบคุณที่แวะมา
+                <br />
+                <span className="text-yellow">เติมรส</span> กับเรา
+              </h2>
+              <p>
+                ขอบคุณทุกคนที่เข้ามาชม ร่วมโหวต และร่วมสนุกกับแคมเปญ “เติมรส” ของเถ้าแก่น้อย
+                แล้วพบกับสาหร่ายอบ 20 ก. และสาหร่ายโรยข้าว 45 ก. ได้เร็ว ๆ นี้
+              </p>
+              <div className="hero__cta">
+                <a href="#products" className="btn btn--yellow">
+                  เลือกรสที่ใช่ →
+                </a>
+                <a href="#vote" className="btn btn--ghost">
+                  ไปโหวต
+                </a>
+              </div>
+            </div>
           </div>
         </section>
       </main>

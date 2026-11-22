@@ -1633,3 +1633,118 @@ button {
 .showcase__pack {
   filter: drop-shadow(0 22px 24px rgba(0, 0, 0, 0.3));
 }
+
+/* ---------- thank you ---------- */
+.thanks {
+  padding: 72px 0 0;
+}
+.thanks__inner {
+  position: relative;
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  align-items: end;
+  gap: 40px;
+}
+.thanks__media {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  min-height: 460px;
+}
+.thanks__plate {
+  position: absolute;
+  bottom: -120px;
+  left: 50%;
+  width: 440px;
+  aspect-ratio: 1;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  background: radial-gradient(circle, var(--yellow) 0 58%, rgba(255, 199, 44, 0.35) 58% 70%, transparent 70%);
+}
+.thanks__person {
+  position: relative;
+  width: min(360px, 80%);
+  height: auto;
+  display: block;
+  filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.3));
+}
+.thanks__bubble {
+  position: absolute;
+  top: 24px;
+  right: 2%;
+  z-index: 2;
+  padding: 12px 20px;
+  border-radius: 22px 22px 22px 4px;
+  background: var(--white);
+  color: var(--red);
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: 24px;
+  white-space: nowrap;
+  box-shadow: var(--shadow-sm);
+  transform: rotate(-4deg);
+  animation: wobble 3.4s ease-in-out infinite;
+}
+.thanks__mascot {
+  position: absolute;
+  left: 4%;
+  bottom: 36px;
+  z-index: 2;
+  width: 92px;
+  height: 92px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: var(--white);
+  box-shadow: 0 0 0 5px var(--yellow), var(--shadow-sm);
+  animation: float 5s ease-in-out infinite;
+}
+.thanks__mascot img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.thanks__copy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 18px;
+  padding-bottom: 72px;
+}
+.thanks__copy p {
+  max-width: 520px;
+  opacity: 0.95;
+}
+.thanks__copy .hero__cta {
+  margin: 6px 0 0;
+}
+@media (max-width: 1000px) {
+  .thanks__inner {
+    grid-template-columns: 1fr;
+  }
+  .thanks__copy {
+    order: -1;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 0;
+  }
+  .thanks__copy .hero__cta {
+    justify-content: center;
+  }
+  .thanks__media {
+    min-height: 400px;
+  }
+}
+@media (max-width: 720px) {
+  .thanks__plate {
+    width: 340px;
+  }
+  .thanks__bubble {
+    font-size: 18px;
+    right: 0;
+  }
+  .thanks__mascot {
+    width: 70px;
+    height: 70px;
+  }
+}
