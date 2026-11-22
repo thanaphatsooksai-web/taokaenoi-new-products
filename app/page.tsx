@@ -4,6 +4,7 @@ import Reveal from "@/components/Reveal";
 import toppingOriginal from "@/assets/topping-45-original.webp";
 import roastedTomyum from "@/assets/roasted-20-tomyum.webp";
 import cookingChallenge from "@/assets/cooking-challenge.webp";
+import mascot from "@/assets/taokaenoi-mascot.webp";
 import { pairings, partners, priceLadder, stores } from "@/lib/products";
 
 const marqueeItems = [
@@ -33,9 +34,11 @@ export default function Home() {
       <header className="nav">
         <div className="container nav__inner">
           <a href="#top" className="logo" aria-label="เถ้าแก่น้อย หน้าแรก">
-            <span className="logo__mark">ถ</span>
+            <span className="logo__mark">
+              <Image src={mascot} alt="" className="logo__img" />
+            </span>
             <span className="logo__text">
-              เถ้าแก่น้อย<small>NEW SIZE 2027</small>
+              เถ้าแก่น้อย
             </span>
           </a>
           <nav className="nav__links" aria-label="เมนูหลัก">
@@ -343,7 +346,9 @@ export default function Home() {
       <footer className="footer">
         <div className="container footer__inner">
           <div className="logo logo--light">
-            <span className="logo__mark">ถ</span>
+            <span className="logo__mark">
+              <Image src={mascot} alt="" className="logo__img" />
+            </span>
             <span className="logo__text">
               เถ้าแก่น้อย<small>เติมรส ให้ทุกมื้อ</small>
             </span>

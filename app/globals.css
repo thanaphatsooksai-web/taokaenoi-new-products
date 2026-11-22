@@ -1384,3 +1384,18 @@ button {
 .partner__tag {
   white-space: nowrap;
 }
+
+/* โลโก้มาสคอตในวงกลม */
+.logo__mark {
+  background: var(--white);
+  box-shadow: 0 0 0 3px var(--red);
+  overflow: hidden;
+}
+.logo__img {
+  width: 34px;
+  height: auto;
+  margin-top: 2px;
+}
+.logo__text {
+  justify-content: center;
+}
