@@ -143,6 +143,6 @@ export const stores = [
 
 export const partners = [
   { name: "น้ำมะพร้าว IF", nameEn: "IF Coconut Water", mark: "IF", tone: "green" },
-  { name: "บีเทาเก้น", nameEn: "", mark: "บี", tone: "yellow" },
+  { name: "บีทาเก้น", nameEn: "Betagen", mark: "บี", tone: "yellow" },
   { name: "หนังสือพิมพ์ไทยรัฐ", nameEn: "Thairath", mark: "ไทยรัฐ", tone: "red" },
 ] as const;
