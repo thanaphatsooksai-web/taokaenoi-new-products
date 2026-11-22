@@ -1896,3 +1896,31 @@ button {
   color: var(--white);
   background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
 }
+
+/* 5 ชุด: ป้ายอยู่บรรทัดบน ปุ่มกะทัดรัดจัดกลาง */
+.outfit {
+  max-width: 100%;
+  padding: 8px 10px 10px;
+  gap: 6px;
+  border-radius: 24px;
+}
+.outfit__label {
+  flex-basis: 100%;
+  text-align: center;
+  padding: 0 0 2px;
+  display: block;
+}
+.outfit__btn {
+  padding: 6px 12px;
+  font-size: 14px;
+  gap: 6px;
+}
+.outfit__swatch {
+  width: 14px;
+  height: 14px;
+}
+@media (max-width: 720px) {
+  .outfit__label {
+    display: block;
+  }
+}

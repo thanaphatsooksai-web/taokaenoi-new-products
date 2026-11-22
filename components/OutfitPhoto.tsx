@@ -6,12 +6,14 @@ import whiteShirt from "@/assets/thank-you-person.webp";
 import blackShirt from "@/assets/thank-you-person-black.webp";
 import blackShirtMic from "@/assets/thank-you-person-mic.webp";
 import qipaoMic from "@/assets/thank-you-person-qipao.webp";
+import muscleTee from "@/assets/thank-you-person-muscle.webp";
 
 const OUTFITS = [
   { id: "white", label: "ดั้งเดิม", desc: "เชิ้ตขาว", swatch: "#f4f2fb", image: whiteShirt },
   { id: "black", label: "เข้มข้น", desc: "เชิ้ตดำ", swatch: "#141414", image: blackShirt },
   { id: "mic", label: "เข้มข้นอย่างลึกซึ้ง", desc: "เชิ้ตดำถือไมค์", swatch: "#141414", image: blackShirtMic },
   { id: "qipao", label: "ต้มยำ", desc: "ชุดกี่เพ้าถือไมค์", swatch: "linear-gradient(135deg, #c8102e 55%, #f2c14e 55%)", image: qipaoMic },
+  { id: "muscle", label: "อเมริกาโน่คั่วกล้าม", desc: "เสื้อยืดดำรัดรูปถือไมค์", swatch: "linear-gradient(135deg, #141414 55%, #6f4e37 55%)", image: muscleTee },
 ] as const;
 type OutfitId = (typeof OUTFITS)[number]["id"];
 
