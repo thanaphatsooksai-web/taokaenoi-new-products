@@ -5,11 +5,13 @@ import { useState } from "react";
 import whiteShirt from "@/assets/thank-you-person.webp";
 import blackShirt from "@/assets/thank-you-person-black.webp";
 import blackShirtMic from "@/assets/thank-you-person-mic.webp";
+import qipaoMic from "@/assets/thank-you-person-qipao.webp";
 
 const OUTFITS = [
   { id: "white", label: "ดั้งเดิม", desc: "เชิ้ตขาว", swatch: "#f4f2fb", image: whiteShirt },
   { id: "black", label: "เข้มข้น", desc: "เชิ้ตดำ", swatch: "#141414", image: blackShirt },
   { id: "mic", label: "เข้มข้นอย่างลึกซึ้ง", desc: "เชิ้ตดำถือไมค์", swatch: "#141414", image: blackShirtMic },
+  { id: "qipao", label: "ต้มยำ", desc: "ชุดกี่เพ้าถือไมค์", swatch: "linear-gradient(135deg, #c8102e 55%, #f2c14e 55%)", image: qipaoMic },
 ] as const;
 type OutfitId = (typeof OUTFITS)[number]["id"];
 
