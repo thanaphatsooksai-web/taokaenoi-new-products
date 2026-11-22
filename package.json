@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "deploy": "rm -rf out && BASE_PATH=/taokaenoi-new-products next build && touch out/.nojekyll && cd out && git init -q -b gh-pages && git add -A && git commit -qm deploy && git push -f https://github.com/thanaphatsooksai-web/taokaenoi-new-products.git gh-pages"
+    "deploy": "rm -rf .next-deploy && BASE_PATH=/taokaenoi-new-products NEXT_DIST_DIR=.next-deploy next build && touch .next-deploy/.nojekyll && cd .next-deploy && git init -q -b gh-pages && git add -A && git commit -qm deploy && git push -f https://github.com/thanaphatsooksai-web/taokaenoi-new-products.git gh-pages"
   },
   "dependencies": {
     "next": "15.5.29",
