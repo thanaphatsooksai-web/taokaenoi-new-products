@@ -147,5 +147,5 @@ export const stores = [
 export const partners = [
   { name: "น้ำมะพร้าว IF", nameEn: "IF Coconut Water", logo: logoIf, logoH: 72 },
   { name: "บีทาเก้น", nameEn: "Betagen", logo: logoBetagen, logoH: 46 },
-  { name: "จอยลดา", nameEn: "Joylada", logo: logoJoylada, logoH: 84, rounded: true },
+  { name: "จาลดอย", nameEn: "Joylada", logo: logoJoylada, logoH: 84, rounded: true },
 ];
