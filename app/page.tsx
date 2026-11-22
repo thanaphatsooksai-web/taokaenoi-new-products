@@ -356,7 +356,7 @@ export default function Home() {
                     <Image
                       src={p.logo}
                       alt={`โลโก้ ${p.nameEn}`}
-                      style={{ height: p.logoH, width: "auto" }}
+                      style={{ height: p.logoH, width: "auto", borderRadius: "rounded" in p ? 20 : 0 }}
                     />
                   </span>
                   <span className="partner__name">{p.name}</span>
