@@ -2,11 +2,11 @@ import Image from "next/image";
 import ProductShowcase from "@/components/ProductShowcase";
 import Reveal from "@/components/Reveal";
 import VotePoll from "@/components/VotePoll";
+import OutfitPhoto from "@/components/OutfitPhoto";
 import toppingOriginal from "@/assets/topping-45-original.webp";
 import roastedTomyum from "@/assets/roasted-20-tomyum.webp";
 import cookingChallenge from "@/assets/cooking-challenge.webp";
 import mascot from "@/assets/taokaenoi-mascot.webp";
-import thankYouPerson from "@/assets/thank-you-person.webp";
 import { pairings, partners, priceLadder, stores } from "@/lib/products";
 
 const marqueeItems = [
@@ -390,7 +390,7 @@ export default function Home() {
           <div className="container thanks__inner">
             <div className="thanks__media reveal">
               <span className="thanks__plate" aria-hidden />
-              <Image src={thankYouPerson} alt="ตัวแทนทีมผู้จัดทำ" className="thanks__person" />
+              <OutfitPhoto />
               <span className="thanks__bubble">ขอบคุณครับ 🙏</span>
               <span className="thanks__mascot" aria-hidden>
                 <Image src={mascot} alt="" />
