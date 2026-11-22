@@ -17,9 +17,14 @@ npm run dev   # http://localhost:3000
 - `app/globals.css` — ธีม ขาว แดง เหลือง (ตัวแปรสีอยู่ที่ `:root`)
 - `assets/` — ภาพแพ็กเกจที่ครอปจากรายงาน
 
+## ดูเว็บออนไลน์
+https://thanaphatsooksai-web.github.io/taokaenoi-new-products/
+
 ## Deploy
-ทุกครั้งที่ push ขึ้น branch `main` GitHub Actions (`.github/workflows/deploy.yml`) จะ build เป็นเว็บ static แล้ว deploy ขึ้น GitHub Pages ให้อัตโนมัติ
-ต้องเปิดครั้งแรกที่ **Settings → Pages → Source: GitHub Actions**
+หลังแก้ไขงาน รันคำสั่งนี้เพื่อ build และอัปเดตเว็บบน GitHub Pages (branch `gh-pages`)
+```bash
+npm run deploy
+```
 
 ---
 เว็บไซต์ต้นแบบประกอบรายงานแผนการตลาด จัดทำเพื่อการศึกษา ไม่ใช่เว็บไซต์ทางการของบริษัท
