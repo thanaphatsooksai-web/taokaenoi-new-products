@@ -401,7 +401,7 @@ export default function Home() {
               <h2>
                 ขอบคุณที่แวะมา
                 <br />
-                <span className="text-yellow">เติมรส</span> กับเรา
+                <span className="text-yellow">เติมรส</span> กับอาร์ท
               </h2>
               <p>
                 ขอบคุณทุกคนที่เข้ามาชม ร่วมโหวต และร่วมสนุกกับแคมเปญ “เติมรส” ของเถ้าแก่น้อย
