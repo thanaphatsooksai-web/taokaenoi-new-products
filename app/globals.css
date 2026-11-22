@@ -1622,3 +1622,14 @@ button {
     justify-content: center;
   }
 }
+
+/* ซองสินค้าแบบพื้นโปร่งใส: เงาตามรูปทรงซอง ไม่ใช่กรอบสี่เหลี่ยม */
+.hero__pack,
+.showcase__pack {
+  border-radius: 0;
+  box-shadow: none;
+  filter: drop-shadow(0 24px 28px rgba(0, 0, 0, 0.35));
+}
+.showcase__pack {
+  filter: drop-shadow(0 22px 24px rgba(0, 0, 0, 0.3));
+}
