@@ -1292,3 +1292,95 @@ button {
 .nowrap {
   white-space: nowrap;
 }
+
+/* ---------- partners ---------- */
+.partners {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.partner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 6px;
+  padding: 36px 24px 28px;
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  border: 2px solid transparent;
+  transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s;
+}
+.partner:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow);
+  border-color: var(--red);
+}
+.partner__mark {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  margin-bottom: 10px;
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1;
+  color: var(--white);
+  background: var(--red);
+  box-shadow: 0 0 0 6px var(--yellow-soft);
+}
+.partner--green .partner__mark {
+  background: var(--green);
+  font-size: 34px;
+}
+.partner--yellow .partner__mark {
+  background: var(--yellow);
+  color: var(--red);
+  font-size: 34px;
+}
+.partner__name {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 1.25;
+}
+.partner__en {
+  font-size: 14px;
+  color: var(--muted);
+  letter-spacing: 0.04em;
+}
+.partner__tag {
+  margin-top: 8px;
+  padding: 4px 12px;
+  border-radius: 999px;
+  background: #ffe6ea;
+  color: var(--red);
+  font-size: 13px;
+  font-weight: 600;
+}
+@media (max-width: 720px) {
+  .partners {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* nav: กันข้อความตัดบรรทัด และซ่อนเมนูเมื่อจอแคบ */
+.nav__links a,
+.logo__text,
+.btn {
+  white-space: nowrap;
+}
+@media (max-width: 900px) {
+  .nav__links {
+    display: none;
+  }
+}
+.partner__tag {
+  white-space: nowrap;
+}

@@ -4,7 +4,7 @@ import Reveal from "@/components/Reveal";
 import toppingOriginal from "@/assets/topping-45-original.webp";
 import roastedTomyum from "@/assets/roasted-20-tomyum.webp";
 import cookingChallenge from "@/assets/cooking-challenge.webp";
-import { pairings, priceLadder, stores } from "@/lib/products";
+import { pairings, partners, priceLadder, stores } from "@/lib/products";
 
 const marqueeItems = [
   "NEW SIZE",
@@ -43,6 +43,7 @@ export default function Home() {
             <a href="#pairing">เติมรสทุกมื้อ</a>
             <a href="#value">ความคุ้ม</a>
             <a href="#challenge">ร่วมสนุก</a>
+            <a href="#partners">พาร์ทเนอร์</a>
           </nav>
           <a href="#where" className="btn btn--yellow btn--sm">
             ซื้อเลย
@@ -281,6 +282,31 @@ export default function Home() {
                 <span>#CookingChallenge</span>
               </div>
             </div>
+          </div>
+        </section>
+
+        {/* ---------- PARTNERS ---------- */}
+        <section id="partners" className="section section--cream">
+          <div className="container">
+            <div className="section__head reveal">
+              <span className="pill pill--red">Our Partners</span>
+              <h2>
+                พาร์ทเนอร์ <span className="text-red">ของเรา</span>
+              </h2>
+              <p className="muted">ร่วมกัน “เติมรส” ให้ทุกมื้อของคนไทย</p>
+            </div>
+            <ul className="partners">
+              {partners.map((p, i) => (
+                <li key={p.name} className={`partner partner--${p.tone} reveal`} style={{ transitionDelay: `${i * 90}ms` }}>
+                  <span className="partner__mark" aria-hidden>
+                    {p.mark}
+                  </span>
+                  <span className="partner__name">{p.name}</span>
+                  {p.nameEn && <span className="partner__en">{p.nameEn}</span>}
+                  <span className="partner__tag">#เติมรส</span>
+                </li>
+              ))}
+            </ul>
           </div>
         </section>
 
