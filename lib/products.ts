@@ -74,9 +74,9 @@ export const productLines: ProductLine[] = [
     size: 45,
     price: 95,
     pricePerGram: 2.11,
-    sizeLabel: "ขนาดครอบครัว · ถุงซิปล็อก",
+    sizeLabel: "ขนาดครอบครัว",
     description:
-      "ถุงซิปล็อกขนาดครอบครัว 45 กรัม เปิด-ปิดได้ เก็บความกรอบ โรยได้หลายมื้อ คุ้มที่สุดต่อกรัม",
+      "ขนาดครอบครัว 45 กรัม หอมกรอบ เข้ากับข้าวร้อน ๆ คุ้มที่สุดต่อกรัม",
     compare: [
       { brand: "แบรนด์ C", size: "40 ก.", price: 86, perGram: 2.15, index: 98 },
       { brand: "แบรนด์ B", size: "50 ก.", price: 129, perGram: 2.58, index: 82 },
@@ -96,7 +96,7 @@ export const productLines: ProductLine[] = [
         nameEn: "Tom Yum Flavor",
         image: toppingTomyum,
         tagline: "รสแรกในตลาดสาหร่ายโรยข้าว",
-        points: ["ความต่างด้วยรสชาติไทย", "แบ่งทานได้หลายครั้ง", "ทางเลือกใหม่ในตลาด"],
+        points: ["ความต่างด้วยรสชาติไทย", "รสต้มยำจัดจ้าน เข้ากับข้าวร้อน ๆ", "ทางเลือกใหม่ในตลาด"],
       },
     },
   },
@@ -116,7 +116,7 @@ export const priceLadder = [
     steps: [
       { size: "8 ก.", label: "ทดลอง", price: 20, perGram: 2.5 },
       { size: "16 ก.", label: "ซองหลัก", price: 35, perGram: 2.19 },
-      { size: "45 ก.", label: "ใหม่ · ซิปล็อก", price: 95, perGram: 2.11, isNew: true },
+      { size: "45 ก.", label: "ใหม่", price: 95, perGram: 2.11, isNew: true },
     ],
   },
 ];
