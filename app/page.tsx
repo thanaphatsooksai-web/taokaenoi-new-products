@@ -48,9 +48,9 @@ export default function Home() {
           <nav className="nav__links" aria-label="เมนูหลัก">
             <a href="#products">สินค้าใหม่</a>
             <a href="#pairing">เติมรสทุกมื้อ</a>
-            <a href="#video">ดูคลิป</a>
             <a href="#value">ความคุ้ม</a>
             <a href="#challenge">ร่วมสนุก</a>
+            <a href="#video">ดูคลิป</a>
             <a href="#vote">โหวต</a>
             <a href="#partners">พาร์ทเนอร์</a>
           </nav>
@@ -207,36 +207,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* ---------- VIDEO ---------- */}
-        <section id="video" className="section section--cream">
-          <div className="container video">
-            <div className="section__head reveal">
-              <span className="pill pill--red">▶ ดูคลิป</span>
-              <h2>
-                เชฟเถ้าแก่น้อย <span className="text-red">ชวนเติมรส</span>
-              </h2>
-              <p className="muted">คิมบับ สปาเกตตี้ เทมปุระ ทำง่าย อร่อยขึ้น ด้วยสาหร่ายซองเดียว</p>
-            </div>
-            <div className="video__frame reveal">
-              <span className="video__sticker" aria-hidden>
-                เติมรส!
-              </span>
-              <video
-                className="video__player"
-                controls
-                playsInline
-                preload="metadata"
-                poster={`${basePath}/video/taokaenoi-cooking-v2-poster.webp`}
-                width={744}
-                height={540}
-              >
-                <source src={`${basePath}/video/taokaenoi-cooking-v2.mp4`} type="video/mp4" />
-                เบราว์เซอร์ของคุณไม่รองรับการเล่นวิดีโอ
-              </video>
-            </div>
-          </div>
-        </section>
-
         {/* ---------- VALUE ---------- */}
         <section id="value" className="section">
           <div className="container value">
@@ -320,6 +290,36 @@ export default function Home() {
                 <span>#เถ้าแก่น้อย</span>
                 <span>#CookingChallenge</span>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* ---------- VIDEO ---------- */}
+        <section id="video" className="section section--cream">
+          <div className="container video">
+            <div className="section__head reveal">
+              <span className="pill pill--red">▶ ดูคลิป</span>
+              <h2>
+                เชฟเถ้าแก่น้อย <span className="text-red">ชวนเติมรส</span>
+              </h2>
+              <p className="muted">คิมบับ สปาเกตตี้ เทมปุระ ทำง่าย อร่อยขึ้น ด้วยสาหร่ายซองเดียว</p>
+            </div>
+            <div className="video__frame reveal">
+              <span className="video__sticker" aria-hidden>
+                เติมรส!
+              </span>
+              <video
+                className="video__player"
+                controls
+                playsInline
+                preload="metadata"
+                poster={`${basePath}/video/taokaenoi-cooking-v2-poster.webp`}
+                width={744}
+                height={540}
+              >
+                <source src={`${basePath}/video/taokaenoi-cooking-v2.mp4`} type="video/mp4" />
+                เบราว์เซอร์ของคุณไม่รองรับการเล่นวิดีโอ
+              </video>
             </div>
           </div>
         </section>
