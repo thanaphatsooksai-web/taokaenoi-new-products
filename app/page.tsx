@@ -226,11 +226,11 @@ export default function Home() {
                 controls
                 playsInline
                 preload="metadata"
-                poster={`${basePath}/video/taokaenoi-cooking-poster.webp`}
+                poster={`${basePath}/video/taokaenoi-cooking-v2-poster.webp`}
                 width={744}
                 height={540}
               >
-                <source src={`${basePath}/video/taokaenoi-cooking.mp4`} type="video/mp4" />
+                <source src={`${basePath}/video/taokaenoi-cooking-v2.mp4`} type="video/mp4" />
                 เบราว์เซอร์ของคุณไม่รองรับการเล่นวิดีโอ
               </video>
             </div>
